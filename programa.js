@@ -145,7 +145,7 @@ async function generarPDF() {
 
   try {
     // Pausa corta para que el navegador alcance a mostrar el loader
-    await esperar(1200);
+    await esperar(3000);
 
     const pedidos = await db.pedidos.toArray();
     if (pedidos.length === 0) {
